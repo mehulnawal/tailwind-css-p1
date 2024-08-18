@@ -1,0 +1,1602 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./slick.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- swiper slider css  -->
+    <link rel="stylesheet" href="./swiper.min.css">
+
+    <!-- tailwind css cdn -->
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class=" bg-[url('https://www.wscubetech.com/images/bg-layers/hero-section-bg.svg')] h-fit">
+
+        <!-- <section class="bg-[#FFF5E6] p-5 text-center text-[14px]">
+            <p> <span class="font-bold">Data Analytics Mentorship Program - Cohort 2</span>
+                | Learn from Top Data Analysts | Cohort
+                Starting from <span class="font-bold">21st Sept 2024</span>
+                <a class="font-normal px-3 py-1 border-2 bg-[#FC9C03] rounded-[30px]" href="javascript:void(0)">Apply
+                    Now</a>
+            </p>
+        </section> -->
+
+        <!-- nav bar -->
+        <nav
+            class="flex mt-0 items-center justify-between mx-auto py-[10px] p-2 md:p-4 fixed top-0 w-[100%] z-[99] bg-blue-700 shadow-[5px_5px_5px_black] text-white">
+            <div class="flex gap-[30px] items-center relative">
+                <a href="javascript:void(0)" class="logo">
+                    <img class="w-[80%]" src="https://www.wscubetech.com/images/ws-cube-white-logo.svg" alt="">
+                </a>
+
+                <a href="javascript:void(0)"
+                    class="courses border-[1.5px] border-[rgba(0_0_0_0.5)] py-3 px-6 rounded-lg hidden md:block hover:bg-white hover:text-black duration-[0.6s]">Explore
+                    courses
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown">
+                    <ul class="absolute left-[38%] top-[70px] text-white p-5  bg-blue-700 shadow-[5px_5px_5px_black]">
+                        <li class="dp-link hover:bg-yellow-600 hover:p-1 hover:text-white">
+                            <a href="javascript:void(0)">Web development</a>
+                        </li>
+
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white ">
+                            <a href="javascript:void(0)">App development</a>
+                        </li>
+
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white ">
+                            <a href="javascript:void(0)">Data science</a>
+                        </li>
+
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white ">
+                            <a href="javascript:void(0)">Data Analysis</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="javascript:void(0)"
+                    class="careers hidden md:block hover:bg-white hover:text-black rounded-lg hover:border-[1.5px] hover:border-[rgba(0_0_0_0.5)] hover:py-3 hover:px-3 duration-[0.6s] relative">Careers
+                    Schools
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown-2">
+                    <ul class="absolute left-[70%] top-[70px] text-white p-5  bg-blue-700 shadow-[5px_5px_5px_black]">
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white">
+                            <a href="javascript:void(0)">Jaipur</a>
+                        </li>
+
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white ">
+                            <a href="javascript:void(0)">Surat</a>
+                        </li>
+
+                        <li class="hover:bg-yellow-600 hover:p-1 hover:text-white ">
+                            <a href="javascript:void(0)">Jodhpur</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="hidden md:block hover:bg-white hover:text-black duration-[0.6s] border-[1.5px] border-[rgba(0_0_0_0.5)] py-3 px-6 rounded-lg">
+                <a href="javascript:void(0)" class="login ">Login
+                </a>
+            </div>
+
+            <!-- mobile menu -->
+            <div
+                class="mobile-menu absolute left-0 top-[25%]  bg-blue-700 shadow-[5px_5px_5px_black] text-white w-[100%] p-4 rounded-sm">
+                <ul>
+                    <li class="courses-2 hover:bg-yellow-600 hover:p-1 hover:text-white rounded-lg">
+                        <a href="javascript:void(0)">Explore courses</a>
+                    </li>
+
+
+                    <li class="careers-2 hover:bg-yellow-600 hover:p-1 hover:text-white rounded-lg relative">
+                        <a href="javascript:void(0)">Careers Schools</a>
+                    </li>
+
+
+                    <li class="hover:bg-yellow-600 hover:p-1 hover:text-white rounded-lg">
+                        <a href="javascript:void(0)">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0)"
+                class="close-menu visible md:hidden text-[25px] border-[1.5px] border-[rgba(0_0_0_0.5)] py-1 px-5 rounded-lg">#
+            </a>
+        </nav>
+
+        <a class="img-1 border-2 border-black bg-white rounded-[20px] p-2 absolute bottom-[40%] right-[45%] 2xl:bottom-[70%] hidden lg:inline-block "
+            href="javascript:void(0)">Python</a>
+
+        <img class="cursor1 absolute bottom-[37%] right-[45%] 2xl:bottom-[68%] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/icons/banner-arrow-icon.svg" alt="">
+
+        <img src="https://d2kr1rbctelohj.cloudfront.net/images/bg-layers/bg-star-1.svg" alt=""
+            class="star1 absolute bottom-[45%] right-[48%] 2xl:bottom-[75%] w-[40px] hidden lg:inline-block">
+
+        <img class="absolute bottom-[50%] right-[8%] w-[50px] 2xl:bottom-[70%] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/bg-layers/banner-bg-layer-1.svg" alt="">
+
+        <a class="img-2 border-2 border-black bg-white rounded-[20px] p-2 absolute bottom-[35%] right-[1%] 2xl:bottom-[65%] 2xl:right-[2%] text-[13px] hidden lg:inline-block"
+            href="javascript:void(0)">Full
+            stack development</a>
+
+        <img class="cursor2 absolute bottom-[32%] right-[1%] 2xl:bottom-[65%] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/icons/banner-arrow-icon.svg" alt="">
+
+        <a class="img-2 border-2 border-black bg-white rounded-[20px] p-2 absolute bottom-[10%] right-[42%] hidden lg:inline-block"
+            href="javascript:void(0)">Performance
+            Marketing</a>
+
+        <img class="cursor4 absolute bottom-[7%] right-[42%] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/icons/banner-arrow-icon.svg" alt="">
+
+        <img class="absolute right-[2%] bottom-[13%] w-[40px] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/bg-layers/bg-star-3.svg" alt="">
+
+        <a class="img-2 border-2 border-black bg-white rounded-[20px] p-2 absolute right-[2%] bottom-[5%] text-[13px] hidden lg:inline-block"
+            href="javascript:void(0)">Data
+            Analysis</a>
+
+        <img class="cursor3 absolute right-[2%] bottom-[3%] text-[13px] hidden lg:inline-block"
+            src="https://d2kr1rbctelohj.cloudfront.net/images/icons/banner-arrow-icon.svg" alt="">
+
+        <!-- banner section -->
+        <section
+            class="hero text-white max-w-[1180px] mx-auto p-2 md:p-4 block lg:flex justify-between text-center lg:text-start mt-8">
+            <div class="mt-[70px] basis-[50%]">
+                <h1 class="text-[25px] lg:text-[40px] font-bold">Don’t Just Upskill, Get Career-ready, Get Hired</h1>
+                <p class="mt-3 lg:text-[20px]">Top Mentorship Programs in Tech, Marketing, & Data- Designed
+                    and Delivered
+                    by industry
+                    maestros.</p>
+
+                <div class="flex mt-[35px] flex-col sm:flex-row justify-center text-center items-center gap-[50px] ">
+                    <div class="flex flex-col lg:flex-row gap-[20px] items-center">
+                        <div>
+                            <img class="bg-white rounded-[50%] p-2 w-[32px] lg:w-[50px] hover:translate-y-[15%]  hover:translate-x-[15%] duration-[0.6s]"
+                                src="https://d2kr1rbctelohj.cloudfront.net/images/icons/instructors-icon.svg" alt="">
+                        </div>
+
+                        <div>
+                            <p class="text-[20px]">1.5 Lakh + </p>
+                            <p class="font-bold">Aspirants Mentored</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-[20px] items-center">
+                        <div>
+                            <img class="bg-white rounded-[50%] px-3 py-2 w-[40px] lg:w-[60px] hover:translate-y-[15%]  hover:translate-x-[15%] duration-[0.6s]"
+                                src="https://d2kr1rbctelohj.cloudfront.net/images/icons/courses-icon.svg" alt="">
+                        </div>
+
+                        <div>
+                            <p class="text-[20px]">1.5 Lakh + </p>
+                            <p class="font-bold">Aspirants Mentored</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-[20px] items-center">
+                        <div>
+                            <img class="bg-white rounded-[50%] px-2 py-3 w-[40px] lg:w-[60px] hover:translate-y-[15%]  hover:translate-x-[15%] duration-[0.6s]"
+                                src="https://d2kr1rbctelohj.cloudfront.net/images/icons/videos-icon.svg" alt="">
+                        </div>
+
+                        <div>
+                            <p class="text-[20px]">1.5 Lakh + </p>
+                            <p class="font-bold">Aspirants Mentored</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row m-10 ml-0 items-center justify-center lg:justify-start">
+                    <a class="bg-[#194CFF] font-bold px-8 py-3 rounded-lg hover:shadow-[5px_5px_0px_#fdb035] duration-[0.4s] ml-9 sm:ml-0"
+                        href="javascrip:void(0)">Explore
+                        Programs</a>
+
+                    <a class="text-black bg-white rounded-lg px-5 py-3 hover:shadow-[5px_5px_0px_#fdb035] duration-[0.4s] ml-10 mt-[10px] sm:mt-[0px]"
+                        href="javascrip:void(0)">Book Mentor
+                        sessions</a>
+                </div>
+            </div>
+
+            <div class="grid-cols-3 basis-[40%] mt-[70px] hidden lg:grid">
+                <img class="w-[120px]  border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-image-1.webp"
+                    alt="">
+
+                <img class="w-[120px] translate-y-[-30%] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-5.webp"
+                    alt="">
+
+                <img class="w-[100px] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-3.webp"
+                    alt="">
+
+                <img class="w-[90px] translate-y-[30%] translate-x-[-40%] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-4.webp"
+                    alt="">
+
+                <img class="w-[130px] translate-x-[-40%] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-6.webp"
+                    alt="">
+
+                <img class="w-[90px] translate-x-[-40%] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-2.webp"
+                    alt="">
+
+                <img class="w-[90px] translate-y-[40%] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-8.webp"
+                    alt="">
+
+                <img class="w-[120px] border-[3px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-9.webp"
+                    alt="">
+
+                <img class="w-[100px] translate-y-[-20%] border-[2px] border-white shadow-[5px_5px_10px_black] rounded-[50%]"
+                    src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/banner-images/banner-img-7.webp"
+                    alt="">
+            </div>
+        </section>
+    </header>
+
+
+    <!-- body -->
+
+    <main>
+
+        <!-- free masterclass -->
+        <section
+            class="max-w-[1180px] mx-auto md:mt-40 mt-[30px] flex flex-col lg:flex-row text-center lg:text-start items-center gap-[30px] p-3 lg:p-0">
+            <div class="basis-[40%]">
+                <h2 class="font-semibold text-[35px]">Free Masterclasses</h2>
+                <p class="text-[18px] mt-5">Expert-led, interactive live sessions designed to deepen your knowledge and
+                    skills in your chosen
+                    domain of interest.
+                </p>
+
+                <div
+                    class="flex flex-col md:flex-row justify-center lg:justify-between items-center lg:items-start gap-[20px] lg:gap-0 mt-5">
+                    <div>
+                        <i
+                            class="fa-solid fa-arrow-left text-[20px] border-[1px] border-black rounded-[50%] px-4 py-3 cursor-pointer hover:bg-blue-700 hover:text-white hover:shadow-[5px_5px_5px_black] duration-[0.4s]"></i>
+                        <i
+                            class="fa-solid fa-arrow-right text-[20px] border-[1px] border-black rounded-[50%] px-4 py-3 ml-3 cursor-pointer hover:bg-blue-700 hover:text-white hover:shadow-[-5px_5px_5px_black] duration-[0.4s]"></i>
+                    </div>
+
+                    <a href="javascript:void(0)" class="text-blue-700 font-bold">
+                        See all master classes
+                        <i class="fa-solid fa-angle-right text-blue-700"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="basis-[60%] flex flex-col md:flex-row gap-[10px] p-4 w-[100%] justify-center">
+                <div
+                    class="h-[380px] bg-[url('https://www.wscubetech.com/_next/image?url=https%3A%2F%2Fd2kr1rbctelohj.cloudfront.net%2Fuploads%2Fimages%2Fmasterclass%2Fmasterclass-3-epired.webp&w=1080&q=75')] bg-cover border-2 border-black rounded-[20px] hover:shadow-[5px_5px_5px_0px_black] duration-[0.5s] mb-4 md:mb-0 w-[100%] md:w-[360px]">
+                </div>
+
+                <div
+                    class="h-[380px] bg-[url('https://www.wscubetech.com/_next/image?url=https%3A%2F%2Fd2kr1rbctelohj.cloudfront.net%2Fuploads%2Fimages%2Fmasterclass%2Fmaster-class-2-expired.webp&w=1080&q=75')] bg-cover border-2 border-black rounded-[20px] hover:shadow-[5px_5px_5px_0px_black] duration-[0.5s] w-[100%] md:w-[360px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- explore your career fit -->
+        <section class="explore p-4 mt-10 max-w-[1180px] mx-auto">
+            <h2 class="text-center text-[30px] font-semibold">Explore Your Career Fit</h2>
+            <p class="text-center font-medium">Grab actionable career insights with recommended mentorship programs
+                designed to turn your passion into a
+                profession.</p>
+
+            <div class="mt-10 flex flex-wrap gap-[10px] justify-center">
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 bg-blue-600 text-white shadow-[3px_3px_0px_black]"
+                    href="javascript:void(0)">Web
+                    development</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Data
+                    Analysis</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Digital
+                    Marketing</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Cyber Security</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">App development</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Design</a>
+            </div>
+
+            <div class="bg-white border-2 border-black mt-10 p-4 rounded-[20px]">
+                <h2 class="text-[20px] font-semibold sm:text-start text-center">Web Development
+                </h2>
+                <p class="font-light hidden lg:inline-block">Create websites that look great, work smoothly, and are
+                    easy to use.
+                </p>
+
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between w-[100%]">
+                    <div class="basis-[50%]">
+
+                        <div class="mt-16">
+                            <p class="text-blue-600 font-semibold">Avg. Base Salary in India</p>
+                            <div>
+                                <div class="mt-4">
+                                    <span
+                                        class="border-[1px] border-black rounded-[20px] py-1 px-2 bg-[#FFF5E6]">Frontend
+                                        Developer</span>
+                                    <span
+                                        class="career-box text-[#5B5D8A] rounded-[20px] py-2 px-2 bg-[#E1F8CB] ml-3 hover:scale-50 cursor-auto">₹4L
+                                        - ₹10L</span>
+                                </div>
+
+                                <div class="mt-8">
+                                    <span
+                                        class="border-[1px] border-black rounded-[20px] py-1 px-2 bg-[#FFF5E6]">Backend
+                                        Developer</span>
+                                    <span
+                                        class="career-box text-[#5B5D8A] rounded-[20px] py-2 px-2 bg-[#E1F8CB] ml-3 hover:scale-50 cursor-auto">₹3L
+                                        - ₹8L</span>
+                                </div>
+
+                                <div class="mt-8">
+                                    <span class="border-[1px] border-black rounded-[20px] py-1 px-2 bg-[#FFF5E6]">Full
+                                        stack
+                                        Developer</span>
+                                    <span
+                                        class="career-box text-[#5B5D8A] rounded-[20px] py-2 px-2 bg-[#E1F8CB] ml-3 hover:scale-50 cursor-auto">₹5L
+                                        - ₹12L</span>
+                                </div>
+
+                                <div class="mt-8">
+                                    <span class="border-[1px] border-black rounded-[20px] py-1 px-2 bg-[#C2CEFF]">DevOps
+                                        Engineer</span>
+                                    <span
+                                        class="career-box text-[#5B5D8A] rounded-[20px] py-2 px-2 bg-[#E1F8CB] ml-3 hover:scale-50 cursor-auto">₹6L
+                                        - ₹14L</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-12 flex  lg:items-center gap-[20px] bg-[#F3F4F6] px-7 py-5 pb-10 rounded-[20px] relative w-[100%]">
+                            <div class="">
+                                <h3 class="text-blue-600 font-semibold text-[25px]">1,30,000</h3>
+                                <p class="">Job openings in India</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-blue-600 font-semibold text-[25px]">16%</h3>
+                                <p class="">Projected 10+ years growth</p>
+                            </div>
+
+                            <div class="absolute bottom-[0%] right-0 translate-x-[-50%] lg:translate-x-0">
+                                <p
+                                    class="lg:bg-white lg:font-normal font-semibold  bg-[#F3F4F6] p-1 text-black rounded-tl-[20px] text-end rounded-tr-[50px] text-[12px] px-10">
+                                    Updated last month</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <p class="text-blue-600 font-bold text-center sm:text-start">Student Views</p>
+
+                            <div class="slick mt-4 lg:w-[400px] w-[250px] m-auto sm:m-0">
+                                <h4 class="text-color-7 fs-14 lg:mb-12 line-clamp-5 w-[400px] text-justify">
+                                    The
+                                    instructors were incredibly
+                                    knowledgeable and helpful throughout the data analytics online training. I learned
+                                    so
+                                    much
+                                    and feel much more confident in my data analysis abilities.
+
+                                    <p class="font-bold mt-5">Manjo P.</p>
+                                </h4>
+
+                                <h4
+                                    class="text-color-7 fs-14 lh-21 fw-400 lg:mb-12 line-clamp-5 w-[400px] text-justify">
+                                    I'm so
+                                    glad I decided to join
+                                    this
+                                    data analytics training. The instructors were engaging and knowledgeable, and I was
+                                    able
+                                    to
+                                    gain skills that have helped me in my career as a business analyst.
+
+                                    <p class="font-bold mt-5">Vishal R.</p>
+                                </h4>
+
+                                <h4
+                                    class="text-color-7 fs-14 lh-21 fw-400 lg:mb-12 line-clamp-5 w-[400px] text-justify">
+                                    I
+                                    was
+                                    initially hesitant about
+                                    taking an online data analysis course, but I'm so glad I did. The instructors made
+                                    the
+                                    material easy to understand, and I was able to apply what I learned to real-world
+                                    problems.
+                                    I feel much more confident now and would highly recommend the course to anyone
+                                    looking
+                                    to
+                                    improve their abilities.
+
+                                    <p class="font-bold mt-5">Priya S.</p>
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="lg:mt-16 mt-5 basis-[50%]">
+                        <div>
+                            <h3 class="text-blue-600 font-semibold">Prime Hiring Destinations</h3>
+
+                            <marquee behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"
+                                direction="" loop scrollamount="3">
+                                <div class="flex gap-[30px] overflow-hidden w-[100%] mt-2">
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/paytm.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/google.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/infosys.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/cognizant.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/ibm.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/lti-mindtree.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/capgemini.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/accenture.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/tata-consultancy-services.svg"
+                                        alt="">
+
+                                    <img src="https://d2kr1rbctelohj.cloudfront.net/uploads/images/top-companies/color/wipro.svg"
+                                        alt="">
+                                </div>
+                            </marquee>
+                        </div>
+
+                        <div>
+                            <h3 class="text-blue-600 font-semibold">Recommended Professional Certificates</h3>
+
+
+                            <div class="flex flex-col lg:flex-row gap-[30px] mt-3 ml-3">
+                                <div
+                                    class="border-2 border-black h-[500px] basis-[45%] rounded-[20px] hover:shadow-[5px_5px_0px_black] hover:translate-y-[-5px] duration-[0.6s] relative ">
+
+                                    <img class="absolute sm:w-[130px] lg:w-[90px] lg:left-[65%] hidden sm:inline-block sm:left-[50%] lg:top-[15%] sm:top-[30%]"
+                                        src="./images/person1.png" alt="">
+
+                                    <img src="./images/wordpress.webp" alt="">
+
+                                    <h4 class="p-[10px] font-semibold text-[18px]">Full Stack Developer Course
+                                        (Online Training)</h4>
+
+                                    <div class="p-[10px] flex items-center gap-[10px]">
+
+
+                                        <h5>4.9 </h5>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                                        <h6 class="text-[#9ca3af]">(24,922)</h6>
+                                    </div>
+
+                                    <div class="p-[10px]">
+                                        <div class="flex items-center gap-[10px]">
+                                            <i class="fa-solid fa-user-group"></i>
+                                            <h4>100 Live Session</h4>
+                                        </div>
+
+                                        <div class="flex items-center gap-[10px]">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <h4>5 Months</h4>
+                                        </div>
+                                    </div>
+
+                                    <!-- button -->
+                                    <div class="m-3 lg:m-0 lg:mt-4 p-2">
+                                        <a class="border-2 border-black rounded-[10px] mt-10 p-2 bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] text-white"
+                                            href="javascript:void(0)">Data
+                                            Analysis</a>
+
+                                        <a class=" text-[15px] border-2 border-black rounded-[10px] p-2 bg-white  hover:shadow-[3px_3px_0px_black] text-black"
+                                            href="javascript:void(0)">Data
+                                            Analysis</a>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div
+                                    class="border-2 border-black h-[500px] basis-[45%] rounded-[20px] hover:shadow-[5px_5px_0px_black] hover:translate-y-[-5px] duration-[0.6s] relative">
+
+                                    <img class="absolute hidden sm:inline-block lg:w-[200px] lg:top-[5%]"
+                                        src="./images/person2.png" alt="">
+
+                                    <img class="" src="./images/wordpress.webp" alt="">
+
+
+                                    <h4 class="p-[10px] font-semibold text-[18px]">Online WordPress Course (Live
+                                        Training)</h4>
+
+                                    <div class="p-[10px] flex items-center gap-[10px]">
+                                        <h5>4.9 </h5>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                                        <h6 class="text-[#9ca3af]">(9,406)</h6>
+                                    </div>
+
+                                    <div class="p-[10px]">
+                                        <div class="flex items-center gap-[10px]">
+                                            <i class="fa-solid fa-user-group"></i>
+                                            <h4>45 Live Session</h4>
+                                        </div>
+
+                                        <div class="flex items-center gap-[10px]">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <h4>2 Months</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-3 lg:m-0 lg:mt-5 p-2">
+                                        <a class="border-2 border-black rounded-[10px] mt-10 p-2 bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] text-white text-[15px] "
+                                            href="javascript:void(0)">Data
+                                            Analysis</a>
+
+                                        <a class="text-[15px] border-2 border-black rounded-[10px] p-2 bg-white  hover:shadow-[3px_3px_0px_black] text-black"
+                                            href="javascript:void(0)">Data
+                                            Analysis</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- explore top career domains -->
+        <section class="mt-5 career text-white bg-cover bg-center relative p-3">
+
+            <div class="lg:absolute top-[5%] lg:top-[15%] left-[5%] text-center lg:text-start ">
+                <h2 class="text-[25px] font-semibold">Explore Top Career Domains</h2>
+                <p class="w-[60%] mt-5 ml-[20%] lg:ml-0">Discover career paths that truly resonate with your
+                    passion & explore mentorship
+                    programs that align
+                    perfectly with you.</p>
+            </div>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 text-center place-items-center">
+                <div
+                    class="lg:col-start-3 w-[100%] sm:max-w-[250px] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center hover:translate-y-[-5%] duration-[0.6s] mt-[10%] lg:mt-0">
+
+                    <img class="" src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/learn-web-dev.svg"
+                        alt="">
+
+                    <h3 class="font-semibold  mt-[14px] mb-2 text-black text-[18px]">Web Development</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+                <div
+                    class="sm:max-w-[250px] w-[100%] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center hover:translate-y-[-5%] duration-[0.6s] mt-[10%] lg:mt-0 ">
+
+                    <img src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/app-development-icon.svg" alt="">
+
+                    <h3 class="font-semibold mt-[14px] mb-2 text-black text-[18px]">App Development</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+                <div
+                    class="sm:max-w-[250px] w-[100%] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center hover:translate-y-[-5%] duration-[0.6s] mt-[10%] lg:mt-10">
+                    <img src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/cyber-security-icon.svg" alt="">
+
+                    <h3 class="font-semibold mt-[14px] mb-2 text-black text-[18px]">Cyber Security</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+                <div
+                    class="sm:max-w-[250px] w-[100%] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center mt-10 hover:translate-y-[-5%] duration-[0.6s]">
+                    <img src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/design-icon.svg" alt="">
+
+                    <h3 class="font-semibold mt-[14px] mb-2 text-black text-[18px]">Design</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+                <div
+                    class="sm:max-w-[250px] w-[100%] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center mt-10 hover:translate-y-[-5%] duration-[0.6s]">
+                    <img src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/data-science-icon.svg" alt="">
+
+                    <h3 class="font-semibold mt-[14px] mb-2 text-black text-[18px]">Data Analytics</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+                <div
+                    class="sm:max-w-[250px] w-[100%] h-[230px] bg-white p-3 rounded-[20px] flex flex-col items-center justify-center mt-10 hover:translate-y-[-5%] duration-[0.6s]">
+                    <img src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/digital-marketing-icon.svg"
+                        alt="">
+
+                    <h3 class="font-semibold mt-[14px] mb-2 text-black text-[18px]">Digital Marketing</h3>
+
+                    <a class="text-blue-700 hover:scale-[1.04] duration-[0.4s]" href="javascript:void(0)">
+                        See Programs
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- our impact numbers -->
+        <section class="mt-6">
+            <h2 class=" text-center text-[30px] font-semibold">Our Impact Numbers</h2>
+            <p class="text-center">Join our rapidly growing learning community and acquire real-world
+                skills.</p>
+            <div
+                class="flex flex-col lg:flex-row items-center p-3 lg:p-0 justify-center mt-10 max-w-[1180px] mx-auto gap-[40px]">
+                <div class="basis-[35%] order-2 sm:order-[0]">
+                    <div
+                        class="students p-3 text-center text-white shadow-[5px_5px_0px_black] rounded-[20px] hover:shadow-none duration-[0.4s] h-[200px]">
+                        <h2 class="text-[30px] font-semibold">150K+</h2>
+                        <h3 class="text-[25px] font-semibold ">Students Trained</h3>
+                        <p>Empowering futures through skilled students trained by our EdTech expertise</p>
+                    </div>
+
+                    <div class="flex mt-6 gap-[20px]">
+                        <div
+                            class="interns p-3 text-center text-white shadow-[5px_5px_0px_black] rounded-[20px] basis-[50%] hover:shadow-none duration-[0.4s] h-[200px]">
+                            <img class="m-auto mt-7"
+                                src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/interns-icon.svg" alt="">
+                            <h2 class="text-[30px] font-bold">3K+</h2>
+                            <h3 class="font-bold">Interns</h3>
+                        </div>
+
+                        <div
+                            class="domains p-3 text-center text-white shadow-[5px_5px_0px_black] rounded-[20px] basis-[50%] hover:shadow-none duration-[0.4s]">
+                            <img class="m-auto mt-7"
+                                src="https://d2kr1rbctelohj.cloudfront.net/images/home-images/comains-icon.svg" alt="">
+                            <h2 class="text-[30px] font-bold">100+</h2>
+                            <h3 class="font-bold">Training Domains</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="impact-p2 shadow-[5px_5px_0px_black] rounded-[20px] hover:shadow-none duration-[0.4s] w-[100%] basis-[50%] bg-no-repeat h-[400px] relative text-center">
+
+                    <img class="absolute w-[100%] top-[40%] left-0 z-[-1]"
+                        src="https://www.wscubetech.com/images/home-images/yt-learners-bg-bottom.svg" alt="">
+
+                    <h2 class="text-[50px] font-bold mt-[35%]">3M+</h2>
+                    <p class="font-bold text-[25px]"> Learners On <span class="text-red-500">YouTube</span></p>
+
+                    <a class="text-[20px] text-blue-600" href="javascript:void(0)">@wscubetech 5K Videos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- mentorship programs -->
+        <section class="explore p-4 mt-[10%] max-w-[1180px] mx-auto">
+            <h2 class="text-center lg:text-start text-[30px] font-semibold">Mentorship Programs</h2>
+
+            <p class="text-center lg:text-start font-medium">Choose your program, get certified, and grab new career
+                opportunities.</p>
+
+            <div class="mt-10 flex flex-wrap gap-[10px] justify-center">
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 bg-blue-600 text-white shadow-[3px_3px_0px_black]"
+                    href="javascript:void(0)">Web
+                    development</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Data
+                    Analysis</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Digital
+                    Marketing</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Cyber Security</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">App development</a>
+
+                <a class="border-2 border-black rounded-[20px] px-6 py-2 hover:bg-blue-600 hover:text-white hover:shadow-[3px_3px_0px_black] bg-white"
+                    href="javascript:void(0)">Design</a>
+            </div>
+
+            <div class="bg-white border-2 border-black mt-10 p-4 rounded-[20px]">
+
+                <!-- swiper slider -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide flex flex-col lg:flex-row gap-[20px] shadow-[3px_3px_0px_black] hover:shadow-none cursor-pointer">
+                            <div class="basis-[50%]">
+                                <div class="relative">
+
+                                    <img class="absolute w-[100px] sm:w-[120px] md:w-[135px] lg:w-[150px] left-[60%] top-[40%]"
+                                        src="./images/person1.png" alt="">
+
+                                    <img src="./images/wordpress.webp" alt="">
+
+
+                                </div>
+                            </div>
+
+                            <div class="basis-[50%]">
+                                <h2 class="font-semibold mb-5">Full Stack Developer Course (Online Training)</h2>
+
+                                <p>Join the best full stack developer course online and accelerate your career as a
+                                    skilled web developer. Learn from the top industry mentors and launch your
+                                    career in Full Stack Web Development.</p>
+
+
+                                <!-- starts -->
+                                <div class="p-[10px] flex items-center gap-[10px] mt-3">
+                                    <h5>4.9 </h5>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                                    <h6 class="text-[#9ca3af]">(9,406)</h6>
+                                </div>
+
+                                <!-- targeted jobs -->
+                                <div class="flex items-center gap-[20px]">
+                                    <p>Targeted Job Role: </p>
+                                    <p class="border-[1px] border-black py-1 px-4 rounded-[20px]">Full Stack</p>
+                                </div>
+
+                                <!-- duration -->
+                                <div
+                                    class="py-[10px] px-3 flex items-center gap-[30px] border-2 border-black rounded-[40px] lg:w-fit shadow-[5px_3px_0px_black] hover:shadow-none mt-8 w-fit">
+                                    <div class="flex flex-col sm:flex-row items-center gap-[10px]">
+                                        <img src="./images/green-calendar-icon.svg" alt="">
+                                        <div>
+                                            <h4>45 Live Session</h4>
+                                            <h4 class="font-semibold">5 Months</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row items-center gap-[10px]">
+                                        <img src="./images/salary-icon.svg" alt="">
+                                        <div>
+                                            <h4>Live sessions</h4>
+                                            <h4 class="font-bold">2 Months</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- buttons -->
+                                <div class="lg:m-0 lg:mt-2 p-2 flex flex-col lg:flex-row gap-[20px] text-center">
+                                    <a class="border-2 border-black rounded-[10px] mt-10 p-2 bg-blue-700 hover:text-white hover:shadow-[3px_3px_0px_black] text-white text-[15px] md::w-[40%] w-[100%]"
+                                        href="javascript:void(0)">Download curriculum</a>
+
+                                    <a class="border-2 border-black rounded-[10px] lg:mt-10 p-2 bg-white hover:shadow-[3px_3px_0px_black] text-black text-[15px] md::w-[40%] w-[100%]"
+                                        href="javascript:void(0)">Learn more</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="swiper-slide flex flex-col lg:flex-row gap-[20px] shadow-[3px_3px_0px_black] hover:shadow-none cursor-pointer">
+                            <div class="basis-[50%]">
+                                <div class="relative">
+
+                                    <img class="absolute left-[0%] top-[10%]" src="./images/person2.png" alt="">
+
+                                    <img src="./images/wordpress.webp" alt="">
+
+
+                                </div>
+                            </div>
+
+                            <div class="basis-[50%]">
+                                <h2 class="font-semibold mb-5">Full Stack Developer Course (Online Training)</h2>
+
+                                <p>Join the best full stack developer course online and accelerate your career as a
+                                    skilled web developer. Learn from the top industry mentors and launch your
+                                    career in Full Stack Web Development.</p>
+
+
+                                <!-- starts -->
+                                <div class="p-[10px] flex items-center gap-[10px] mt-3">
+                                    <h5>4.9 </h5>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                                    <h6 class="text-[#9ca3af]">(9,406)</h6>
+                                </div>
+
+                                <!-- targeted jobs -->
+                                <div class="flex items-center gap-[20px]">
+                                    <p>Targeted Job Role: </p>
+                                    <p class="border-[1px] border-black py-1 px-4 rounded-[20px]">Full Stack</p>
+                                </div>
+
+                                <!-- duration -->
+                                <div
+                                    class="py-[10px] px-3 flex items-center gap-[30px] border-2 border-black rounded-[40px] lg:w-fit shadow-[5px_3px_0px_black] hover:shadow-none mt-8 w-fit">
+                                    <div class="flex flex-col sm:flex-row items-center gap-[10px]">
+                                        <img src="./images/green-calendar-icon.svg" alt="">
+                                        <div>
+                                            <h4>45 Live Session</h4>
+                                            <h4 class="font-semibold">5 Months</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row items-center gap-[10px]">
+                                        <img src="./images/salary-icon.svg" alt="">
+                                        <div>
+                                            <h4>Live sessions</h4>
+                                            <h4 class="font-bold">2 Months</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- buttons -->
+                                <div class="lg:m-0 lg:mt-2 p-2 flex flex-col lg:flex-row gap-[20px] text-center">
+                                    <a class="border-2 border-black rounded-[10px] mt-10 p-2 bg-blue-700 hover:text-white hover:shadow-[3px_3px_0px_black] text-white text-[15px] md::w-[40%] w-[100%]"
+                                        href="javascript:void(0)">Download curriculum</a>
+
+                                    <a class="border-2 border-black rounded-[10px] lg:mt-10 p-2 bg-white hover:shadow-[3px_3px_0px_black] text-black text-[15px] md::w-[40%] w-[100%]"
+                                        href="javascript:void(0)">Learn more</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Upskill with our Free Resources -->
+        <section class="max-w-[1180px] mx-auto mt-16 flex-col md:flex-row items-center p-4 lg:p-0 hidden lg:flex">
+            <div class="basis-[35%]">
+                <h2 class="text-[30px] font-bold">Upskill with our Free Resources</h2>
+                <p class="mt-[20px]">Engage and excel with our diverse collection of free learning resources, from
+                    quizzes to e-books
+                    and
+                    interactive challenges- designed to lift your career at zero cost!</p>
+
+                <a href="javascript:void(0)"
+                    class="bg-[#194CFF] rounded-lg hover:shadow-[5px_5px_0px_#fdb035] duration-[0.4s] text-white px-8 py-1">Explore
+                    Programs</a>
+            </div>
+
+            <div class="basis-[60%] relative">
+
+                <div class="camera">
+                    <img class="w-[80px] bg-blue-700 px-4 py-3 rounded-[50%] mt-10 md:mt-36 ml-16"
+                        src="https://www.wscubetech.com/images/home-images/videos-icon.svg" alt="">
+                </div>
+
+                <img class="absolute top-[-10%] left-[20%] hidden lg:inline-block w-[60%] "
+                    src="https://www.wscubetech.com/images/arrows-group.svg" alt="">
+
+                <div class="mt-10 md:mt-0 flex gap-20px">
+                    <a class="absolute md:top-[-20%] md:right-[15%] border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none w-fit"
+                        href="javascript:void(0)">Interview Bites</a>
+
+                    <a class="absolute md:top-0 md:right-0 border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">Quizzes</a>
+
+                    <a class="absolute md:top-[47%] md:right-[10%] border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">Articles
+                    </a>
+
+                    <a class="absolute md:top-[72%] md:right-[20%] border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">eBooks</a>
+
+                    <a class="absolute md:top-[110%] md:right-[-5%] border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">Interactive challenges</a>
+
+                    <a class="absolute md:bottom-[-70%] md:right-0 border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">Courses</a>
+
+                    <a class="absolute md:bottom-[-100%] md:right-[25%] border-2 rounded-[20px] border-black p-2 shadow-[5px_5px_0px_black] hover:shadow-none"
+                        href="javascript:void(0)">Tools</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- our career schools -->
+        <section class="school lg:h-[700px] w-[100%] mt-[25%] relative p-5 overflow-hidden">
+
+            <div class="flex  flex-col justify-center items-center mt-40%">
+                <h3 class="text-white text-[30px] font-bold">Our Career Schools</h3>
+                <p class="text-white mt-2 text-[18px]">Replicating online impact through offline centers city-by-city.
+                </p>
+            </div>
+
+            <img class="absolute bottom-0 z[2]" src="./images/centers-bottom-a-bg.svg" alt="">
+
+
+            <img class="absolute top-[40%] left-[50%] translate-x-[-50%] w-[800px] hidden lg:block"
+                src="./images/center-stepper.svg" alt="">
+
+
+            <div class="flex flex-col sm:flex-row gap-[20px] justify-center mt-[60px] relative w-[100%]">
+                <div
+                    class="bg-white rounded-[20px] p-3 sm:w-[110px] flex flex-col  items-center lg:absolute top-[30%] left-[32%] hover:scale-[1.3] duration-[0.4s] sm:mt-0 mt-3 w-[50%] translate-x-[50%]  sm:translate-x-0">
+
+                    <div class=" bg-[url('./images/jaipur-center.webp')] p-2 rounded-[10px] h-[100px] w-[100%] bg-cover
+                    bg-center"></div>
+
+                    <h3 class="font-bold mt-[9px] mb-[7px]">Jaipur</h3>
+
+                    <p class="text-[15px]">Rajasthan</p>
+                </div>
+
+                <div
+                    class="bg-white rounded-[20px] p-3 w-[50%] sm:w-[110px] flex flex-col  items-center lg:absolute lg:left-[50%] hover:scale-[1.3] duration-[0.4s] sm:mt-0 mt-3 translate-x-[50%]  sm:translate-x-0">
+
+                    <div class=" bg-[url('./images/surat.jpg')] p-2 rounded-[10px] h-[100px] w-[100%] bg-cover
+                    bg-center bg-no-repeat"></div>
+
+                    <h3 class="font-bold mt-[9px] mb-[7px]">Surat</h3>
+
+                    <p class="text-[15px]">Gujarat</p>
+                </div>
+
+                <div
+                    class="bg-white rounded-[20px] p-3 translate-x-[50%]  sm:translate-x-0 w-[50%] sm:w-[110px] flex flex-col  items-center lg:absolute top-[30%] right-[15%] text-center hover:scale-[1.3] duration-[0.4s] sm:mt-0 mt-3">
+
+                    <div class=" bg-[url('images/coming-center.svg')] p-2 rounded-[10px] h-[100px] w-[100%] bg-cover
+                    bg-center bg-no-repeat z-[1]"></div>
+
+                    <h3 class="font-bold mt-[9px] mb-[7px]">Coming soon</h3>
+
+                    <p class="text-[15px]">to your city </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mt-10 p-3 sm:hidden lg:block">
+            <div class="flex items-center gap-[5px]">
+                <h3 class="font-semibold text-[30px]">Hear it From Our Learners</h3>
+                <span
+                    class="bg-[#FC9C03] font-semibold text-white py-1 px-3 rounded-[5px] text-[12px]">Testimonials</span>
+            </div>
+            <p class="mt-2">WsCube Tech Alumni Stories, You can’t afford to miss.</p>
+
+            <div class="flex gap-[20px] justify-between flex-wrap h-fit overflow-hidden relative">
+
+                <img class="absolute z-[-1] translate-y-[50%]" src="./images/testimonials-block-bg.svg" alt="">
+
+                <div
+                    class="box box1 basis-[100%]  lg:basis-auto mt-7 rounded-[20px] bg-[url('./images/t2.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10] ">
+
+                    <div class="p-3 z-[10]">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold z-[10]">Adtiya
+                    </p>
+
+                </div>
+
+                <div
+                    class="box box1 basis-[100%] lg:basis-auto  mt-7 rounded-[20px] bg-[url('./images/t1.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10]">
+
+
+                    <div class="p-3">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold">Jayant
+                    </p>
+
+                </div>
+
+                <div
+                    class="box box1 basis-[100%]  lg:basis-auto mt-7 rounded-[20px] bg-[url('./images/t3.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10]   ">
+
+
+                    <div class="p-3">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold">Kanishka
+                    </p>
+
+                </div>
+
+                <div
+                    class="box box1 basis-[100%]  lg:basis-auto mt-7 rounded-[20px] bg-[url('./images/t4.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10]   ">
+
+
+                    <div class="p-3">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold">Jitesh
+                    </p>
+
+                </div>
+
+                <div
+                    class="box box1 basis-[100%]  lg:basis-auto  mt-7 rounded-[20px] bg-[url('./images/t5.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10]   ">
+
+
+                    <div class="p-3">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold">Pushendra
+                    </p>
+
+                </div>
+
+                <div
+                    class="box box1 basis-[100%]  lg:basis-auto  mt-7 rounded-[20px] bg-[url('./images/t6.webp')] h-[400px] duration-[0.6s] ease-in-out bg-cover lg:bg-center shadow-[5px_5px_0px_black] z-[10]">
+
+
+                    <div class="p-3">
+                        <a class="flex ml-[70%] items-center p-[10px] bg-white gap-[10px] group group hover:px-[15px] hover:rounded-[30px] shadow-[2px_2px_0px_black] w-fit rounded-[50%] ease-linear"
+                            href="javascript:void(0)">
+                            <i class="fa-solid fa-play group-hover:text-blue-600 text-[20px]"></i>
+                            <p class="hidden group-hover:inline-block text-[20px] font-semibold text-blue-600">Play</p>
+                        </a>
+                    </div>
+
+                    <p class="m-4 absolute bottom-[5%] text-white text-[23px] font-bold">Jigyasa
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- founders message -->
+        <section class="max-w-[1180px] mx-auto mt-16 relative">
+
+            <!-- founders  -->
+            <div class="flex flex-col lg:flex-row p-3 lg:p-0 justify-between gap-[30px]">
+                <img class="rounded-[20px] z-[10]" src="./images/founder.webp" alt="">
+                <div class="">
+                    <h2 class="font-bold text-[30px]">Founder’s Message</h2>
+
+                    <p class="mt-4">Our Mission is clear. We are building to train over 10 Crores of Career Aspirants
+                        living in
+                        under-resourced demographics of Bharat. We are tirelessly working to empower Career Seekers with
+                        Professional & Practical Tech/Non-tech Skills to help them compete globally for their dream
+                        career opportunities. Ab har career aspirant seekhega top professional skills! Kahi bhi, kabhi
+                        bhi! WsCube Tech ke sath, Aapke sapno ki udaan ab hogi aasan!
+
+                    </p>
+
+                    <p class="mt-4">Kushagra Bhatia</p>
+
+                    <hr class="mt-4">
+
+                    <h2 class="font-bold text-[30px]">Meet the Mentors</h2>
+                </div>
+            </div>
+
+            <marquee behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();" direction="" loop
+                scrollamount="4" class="lg:absolute bottom-0 z-[0]">
+                <div class="flex gap-[35px]">
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m1.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Tushar</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m2.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Shefali</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m3.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Payal</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m5.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Ayush</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m6.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Mehul</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m7.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Govind</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m8.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Naman</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m9.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Bhavik</p>
+                    </div>
+
+                    <div class="mentor w-[130px] text-center p-[2px]">
+                        <div
+                            class="bg-[url('./images/m10.webp')] mt-10 h-[110px] w-[110px] bg-cover rounded-[20px] bg-center m-auto">
+                        </div>
+                        <p class="mt-2 font-bold">Harsh</p>
+                    </div>
+                </div>
+            </marquee>
+
+        </section>
+
+        <br /><br /><br />
+
+    </main>
+
+    <footer>
+
+        <!-- part 1 -->
+        <div class="bg-[#0C1E5E] text-white py-5 px-10">
+            <div class="flex flex-col lg:flex-row gap-[10px] ">
+                <div class="flex-1 mt-14 lg:0">
+                    <img src="./images/ws-cube-white-logo.svg" alt="">
+
+                    <p class="text-[18px] mt-5">Elevate Your Learning Journey with Cutting-Edge Education Technology.
+                    </p>
+
+                    <div class="mt-5">
+                        <a href="javascript:void(0)">
+                            <i
+                                class="fa-brands fa-twitter text-[20px] border-2 border-white p-2 rounded-[50%] me-3 hover:bg-white hover:text-blue-700 duration-[0.4s]"></i>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <i
+                                class="fa-brands fa-instagram text-[20px] border-2 border-white p-2 rounded-[50%] me-3 hover:bg-white hover:text-pink-500 duration-[0.4s]"></i>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <i
+                                class="fa-brands fa-linkedin text-[20px] border-2 border-white p-2 rounded-[50%] me-3 hover:bg-white hover:text-blue-700 duration-[0.4s]"></i>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <i
+                                class="fa-brands fa-youtube text-[20px] border-2 border-white p-2 rounded-[50%] me-3 hover:bg-white hover:text-red-600 duration-[0.4s]"></i>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <i
+                                class="fa-brands fa-facebook text-[20px] border-2 border-white p-2 rounded-[50%] me-3 hover:bg-white hover:text-blue-700 duration-[0.4s]"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <hr class="h-[3px] mt-10 bg-[#3D4B7E] block lg:hidden" />
+
+                <div class="flex-1 mt-14 lg:0">
+                    <h2 class="text-[20px] mt-3 font-bold">Company</h2>
+
+                    <ul class="mt-4 text-[18px]">
+                        <li class="mt-3 list-tems">
+                            <a href="javascript:void(0)">Contact</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">About</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">WsCube Tech Blog</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Self-Placed Courses</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Events</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="h-[3px] mt-10 bg-[#3D4B7E] block lg:hidden" />
+
+                <div class="flex-1 mt-14 lg:0">
+                    <h2 class="text-[20px] mt-3 font-bold">our Programs</h2>
+
+                    <ul class="mt-4 text-[18px]">
+                        <li class="mt-3 list-tems">
+                            <a href="javascript:void(0)">Data Analysis</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Digital Marketing</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Web Development</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Cyber Security</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">App Development</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Design</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="h-[3px] mt-10 bg-[#3D4B7E] block lg:hidden" />
+
+                <div class="flex-1 mt-14 lg:mt-0">
+                    <h2 class="text-[20px] mt-3 font-bold">Support</h2>
+
+                    <ul class="mt-4 text-[18px]">
+                        <li class="mt-3 list-tems">
+                            <a href="javascript:void(0)">Privacy Policy</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Terms & Conditions</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Refund Policy</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Cyber Security</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">App Development</a>
+                        </li>
+
+                        <li class="mt-2 list-tems">
+                            <a href="javascript:void(0)">Design</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="h-[3px] mt-10 bg-[#3D4B7E] block lg:hidden" />
+            </div>
+
+            <hr class="h-[3px] mt-10 bg-[#3D4B7E] hidden lg:block" />
+
+            <div class="hidden lg:block">
+                <h2 class="mt-4 text-[20px]">Digital Marketing</h2>
+
+                <div class="flex gap-[15px] flex-wrap mt-3">
+                    <a class="" href="javascript:void(0)">Digital Marketing Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">SEO Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Social Media Marketing Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Content Writing Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">YouTube Course</a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Instagram Marketing Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Google Ads Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Copywriting Course </a>
+
+                    <span>|</span>
+
+                    <a class="" href="javascript:void(0)">Performance Marketing Course</a>
+
+                    <span>|</span>
+                </div>
+            </div>
+
+            <hr class="h-[3px] mt-10 bg-[#3D4B7E] hidden lg:block" />
+
+            <div class="hidden lg:block">
+                <h2 class="mt-4 text-[20px]">Web Development Courses<h2>
+
+                        <div class="flex gap-[15px] flex-wrap mt-3">
+                            <a class="Full Stack Developer Course" href="javascript:void(0)">Full Stack Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">WordPress Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">MERN Stack Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">Laravel Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">HTML Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">ReactJS Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">Front-End Development Course</a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">PHP Course </a>
+
+                            <span>|</span>
+
+                            <a class="" href="javascript:void(0)">Web Designing Course</a>
+
+                            <span>|</span>
+                        </div>
+            </div>
+
+            <hr class="h-[3px] mt-10 bg-[#3D4B7E] hidden lg:block" />
+
+            <div class="hidden lg:block">
+                <h2 class="mt-4 text-[20px]">More Professional Courses<h2>
+
+                        <a class="" href="javascript:void(0)">Cyber Security Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Android App Development Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Mobile App Development Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Power BI Course</a>
+
+                        <span>|</span>
+            </div>
+
+            <hr class="h-[3px] mt-10 bg-[#3D4B7E] hidden lg:block" />
+
+            <div class="hidden lg:block">
+                <h2 class="mt-4 text-[20px]">Free Courses<h2>
+
+                        <a class="" href="javascript:void(0)">Semrush Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Google Tag Manager Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Photoshop Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Video Editing Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">AngularJS Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Shopify Course</a>
+
+                        <span>|</span>
+
+                        <a class="" href="javascript:void(0)">Django Course</a>
+
+                        <span>|</span>
+            </div>
+
+            <hr class="h-[3px] mt-10 bg-[#3D4B7E] hidden lg:block" />
+
+            <div class="flex flex-col lg:flex-row items-center gap-[20px] justify-center mt-4">
+                <p class="text-[18px]">© Copyright 2024, All Rights Reserved By <span
+                        class="text-[20px] font-bold">Mehul
+                        Nawal</span></p>
+                <img class="w-[120px]" src="images/Mehul.png" alt="">
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- jquery cdn -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- slick slider js -->
+    <script src="./js/slick.min.js"></script>
+
+    <!-- swiper slider js -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- jquery code -->
+    <script>
+        $(document).ready(function () {
+
+            // slick slider 
+            $('.slick').slick({
+                autoplay: 2000,
+                dots: true,
+            });
+
+            $(".slick-prev").remove();
+            $(".slick-next").remove();
+
+            $(".courses").click(function () {
+                $(".dropdown").toggle();
+                $(".dropdown-2").hide();
+            });
+
+            $(".careers").click(function () {
+                $(".dropdown-2").toggle();
+                $(".dropdown").hide();
+            });
+
+            // mobile-menu code
+            $(".close-menu").click(function () {
+                $(".mobile-menu").toggleClass("changes");
+            });
+        });
+    </script>
+
+    <!-- swiper slider js code-->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
